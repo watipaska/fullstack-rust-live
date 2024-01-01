@@ -1,0 +1,10 @@
+C:\Users\user1\Desktop\fullstack-rust-live\backend\target\debug\deps\libfinl_unicode-024b2a72fb1eb4d0.rmeta: C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\lib.rs C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\categories.rs C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\grapheme_clusters.rs C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\data\mod.rs C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\data\characters.rs C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\data\grapheme_property.rs
+
+C:\Users\user1\Desktop\fullstack-rust-live\backend\target\debug\deps\finl_unicode-024b2a72fb1eb4d0.d: C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\lib.rs C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\categories.rs C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\grapheme_clusters.rs C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\data\mod.rs C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\data\characters.rs C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\data\grapheme_property.rs
+
+C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\lib.rs:
+C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\categories.rs:
+C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\grapheme_clusters.rs:
+C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\data\mod.rs:
+C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\data\characters.rs:
+C:\Users\user1\.cargo\registry\src\index.crates.io-6f17d22bba15001f\finl_unicode-1.2.0\src\data\grapheme_property.rs:
