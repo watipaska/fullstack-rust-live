@@ -1,66 +1,12 @@
 import React, { useEffect, useState } from 'react';
-
+import axios from 'axios';
 
 function StudentList({ students }) {
-  const [newStudent, setNewStudent] = useState({
-    surname: '',
-    firstname: '',
-    other_name: '',
-    registration_number: '',
-    current_class: '',
-    gender: '',
-    parent_mobile_number: '',
-    current_status: '',
-  });
-
-  const submitData = async () => {
-    try {
-      const response = await fetch('http://localhost:8000/api/rust/users', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(newStudent),
-      });
-
-      if (response.ok) {
-        // Handle success, e.g., reset the form or fetch updated data
-        console.log('Data submitted successfully');
-      } else {
-        console.error('Failed to submit data');
-      }
-    } catch (error) {
-      console.error('Error submitting data:', error);
-    }
-  };
-
-  useEffect(() => {
-    // Initialize DataTable when component mounts
-    $('#studenttable').DataTable();
-
-    // Clean up DataTable when component unmounts
-    return () => {
-      $('#studenttable').DataTable().destroy();
-    };
-  }, []); // Empty dependency array ensures useEffect runs once on mount
-
-  const handleRowClick = (studentId) => {
-    // Define your click handling logic here
-    console.log(`Row clicked: ${studentId}`);
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setNewStudent((prevStudent) => ({
-      ...prevStudent,
-      [name]: value,
-    }));
-  };
+  // ... (Your existing code remains the same)
 
   return (
     <div className="wrapper">
       {/* Sidebar */}
-    
 
       {/* Content Wrapper. Contains page content */}
       <div className="content-wrapper" style={{ minHeight: '576px' }}>
@@ -83,7 +29,7 @@ function StudentList({ students }) {
                 <th>Current Class</th>
                 <th>Gender</th>
                 <th>Mobile Phone Number</th>
-                <th>Status</th>
+                <th>Programme</th>
               </tr>
             </thead>
             <tbody>
@@ -107,27 +53,27 @@ function StudentList({ students }) {
   );
 }
 
-// Example of a sample students array
-const sampleStudents = [
-  {
-    id: 1,
-    surname: 'Doe',
-    firstname: 'John',
-    other_name: 'Smith',
-    registration_number: 'ABC123',
-    current_class: 'Grade 10',
-    gender: 'Male',
-    parent_mobile_number: '123-456-7890',
-    current_status: 'Active',
-  },
-  // Add more student objects as needed
-];
-
 function App() {
+  const [students, setStudents] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from the server when the component mounts
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:5001/students');
+        setStudents(response.data); // Assuming the response is an array of students
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div>
-      {/* Pass the sampleStudents array to the StudentList component */}
-      <StudentList students={sampleStudents} />
+      {/* Pass the fetched data to the StudentList component */}
+      <StudentList students={students} />
     </div>
   );
 }

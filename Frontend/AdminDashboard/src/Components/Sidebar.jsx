@@ -6,7 +6,7 @@ const Sidebar = () => {
     <aside className="main-sidebar sidebar-dark-primary elevation-4">
       {/* Brand Logo */}
       <Link to="/studentList" className="brand-link">
-        Django School
+         School ADMIN.V1
       </Link>
 
       {/* Sidebar */}
@@ -25,7 +25,7 @@ const Sidebar = () => {
         </div>
         <div
           className="os-content-glue"
-          style={{ margin: "0px -8px", width: "73px", height: "990px" }}
+          style={{ margin: "0px -8px", width: "73px", height: "1500px" }}
         ></div>
         <div className="os-padding">
           <div className="os-viewport os-viewport-native-scrollbars-invisible">
@@ -49,59 +49,57 @@ const Sidebar = () => {
                   </li>
 
                   <li className="nav-item">
-                    <a
-                      href="http://127.0.0.1:8000/staff/list/"
+                  <Link to="/staffList"
                       className="nav-link"
                     >
                       <i className="nav-icon fas fa-users"></i>
                       <p>Member of Staff</p>
-                    </a>
+                      </Link>
                   </li>
 
                   <li className="nav-header">Finance</li>
                   <li className="nav-item">
-                    <a
-                      href="http://127.0.0.1:8000/finance/list/"
+                    <Link to="/InvoiceList"
                       className="nav-link"
                     >
                       <i className="nav-icon fas fa-money-bill-alt"></i>
                       <p>Invoices</p>
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="nav-header">Results</li>
                   <li className="nav-item">
-                    <a
-                      href="http://127.0.0.1:8000/result/create/"
+                    <Link
+                      to="createresult"
                       className="nav-link"
                     >
                       <i className="nav-icon fas fa-money-bill-alt"></i>
                       <p>Create Results</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a
-                      href="http://127.0.0.1:8000/result/edit-results/"
+                    <Link to
+                      ="/editResults"
                       className="nav-link"
                     >
                       <i className="nav-icon fas fa-money-bill-alt"></i>
                       <p>Update Results</p>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a
-                      href="http://127.0.0.1:8000/result/view/all"
+                    <Link to
+                      ="/allresults"
                       className="nav-link"
                     >
                       <i className="nav-icon fas fa-money-bill-alt"></i>
                       <p>View Results</p>
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="nav-header">Others</li>
                   <li className="nav-item has-treeview">
-                    <a
-                      href="http://127.0.0.1:8000/student/create/#"
+                    <Link to=
+                      "/allresults"
                       className="nav-link"
                     >
                       <i className="nav-icon fas fa-copy"></i>
@@ -109,7 +107,7 @@ const Sidebar = () => {
                         Management
                         <i className="fas fa-angle-left right"></i>
                       </p>
-                    </a>
+                    </Link>
                     <ul className="nav nav-treeview">
                       <li className="nav-item">
                         <a
@@ -133,13 +131,12 @@ const Sidebar = () => {
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a
-                          href="http://127.0.0.1:8000/subject/list/"
+                        <Link to ="/subjectlist"
                           className="nav-link"
                         >
                           <i className="nav-icon fas fa-bars"></i>
                           <p>Subjects</p>
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
                         <a
